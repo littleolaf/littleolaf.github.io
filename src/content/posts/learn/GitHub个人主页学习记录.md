@@ -1,6 +1,6 @@
 ---
 title: 个人主页搭建学习记录
-published: 2024-04-13
+published: 2024-04-13 08:00:00
 description: "尝试在GitHub上搭建个人主页"
 # image: "./cover.jpeg"
 tags: [Website]

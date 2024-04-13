@@ -1,6 +1,6 @@
 ---
 title: VS Code 配置远程开发记录
-published: 2024-04-13
+published: 2024-04-13 11:00:00
 description: "尝试用VS Code配置远程开发环境"
 # image: "./cover.jpeg"
 tags: [远程开发]
