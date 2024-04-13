@@ -13,7 +13,7 @@ export const siteConfig: SiteConfig = {
   themeHue: 250,
   banner: { // 站点横幅
     enable: true,
-    src: 'assets/images/demo-banner.png',
+    src: 'https://raw.githubusercontent.com/littleolaf/Web-picture-repo/master/life/202404140110296.jpg',// 默认 'assets/images/demo-banner.png',
   },
 }
 // 导航栏配置
