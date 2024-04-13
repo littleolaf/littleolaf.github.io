@@ -3,7 +3,7 @@ title: 个人主页搭建学习记录
 published: 2024-04-13
 description: "尝试在GitHub上搭建个人主页"
 # image: "./cover.jpeg"
-tags: ["Website"]
+tags: [Website]
 category: 实践学习
 draft: false
 ---

@@ -4,7 +4,7 @@ published: 2024-04-12
 description: "使用mask2former进行医学图像语义分割记录"
 image: "https://raw.githubusercontent.com/littleolaf/Web-picture-repo/master/learn/mask2former_structure.jpg"
 category: 实践学习
-tags: ["运行流程"]
+tags: [运行流程, 毕设]
 draft: false
 ---
 这篇文章记录了我在做毕设的途中，学习使用mask2former的全流程与错误记录。
@@ -80,7 +80,7 @@ $DETECTRON2_DATASETS/
 [COCO下载](https://cocodataset.org/#download)  
 Images中需要下载**2017 Train/Val images**  
 Annotations中需要下载**2017 Train/Val annotations** 和 **2017 Panoptic Train/Val annotations**
-<!-- ![COCO数据集下载页面](COCO数据集下载页面.png)   -->
+![COCO数据集下载页面](https://raw.githubusercontent.com/littleolaf/Web-picture-repo/master/learn/COCO数据集下载页面.png)  
 **预期数据集结构：**
 ```shell
 coco/
@@ -103,7 +103,7 @@ coco/
 #### ADE20K for Semantic seg
 [ADE20K下载](http://sceneparsing.csail.mit.edu/)  
 下载Scene Parsing中的Data。  
-<!-- ![ADE20K下载.png](ADE20K下载.png)   -->
+![ADE20K下载](https://raw.githubusercontent.com/littleolaf/Web-picture-repo/master/learn/ADE20K下载.png)
 预期数据结构：
 ```shell
 ADEChallengeData2016/
