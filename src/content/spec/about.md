@@ -1,7 +1,17 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+# <font color="#53a3f2">About Me</font>
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+欢迎各位访问我的云上小家！  
+# <font color="#53a3f2">关于我</font>
+
+>现在是BUPT的一名小本科生，HKU准研究生。目前正在忙碌自己的毕设。  
+>
+>愿望是能有时间和金钱去祖国更多美丽的地方看一看。喜欢打游戏，学习新奇有趣的事物。  
+>
+>白日幻想家与懒癌患者。  
+
+# <font color="#53a3f2">关于本网站</font>
+>期待将这慢慢打造成我的专属云上小窝，同时也欢迎天南海北的各位能与我共享我生活的点滴。
+>
+>计划收录生活感想，学习笔记，摘录，诗文。  
+
+**<font color="#53a3f2">寄语</font>**：珠海拾遗，捡尽南枝。也许拙笔书不尽万里河山，惟愿点滴留痕，珍宝暂存。
