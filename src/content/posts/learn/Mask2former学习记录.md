@@ -8,6 +8,25 @@ tags: [运行流程, 毕设]
 draft: false
 ---
 这篇文章记录了我在做毕设的途中，学习使用mask2former的全流程与错误记录。
+# 目录
+- [目录](#目录)
+- [Mask2former环境配置与运行](#mask2former环境配置与运行)
+  - [安装环境](#安装环境)
+    - [miniconda](#miniconda)
+    - [Python](#python)
+      - [全流程实例：](#全流程实例)
+  - [安装数据集](#安装数据集)
+    - [数据集路径准备](#数据集路径准备)
+    - [数据集下载](#数据集下载)
+      - [COCO](#coco)
+      - [ADE20K for Semantic seg](#ade20k-for-semantic-seg)
+  - [解决报错](#解决报错)
+      - [1.unexpected keyword argument 'dtype' in torch.cuda.autocast](#1unexpected-keyword-argument-dtype-in-torchcudaautocast)
+      - [2.AttributeError: module 'distutils' has no attribute 'version'](#2attributeerror-module-distutils-has-no-attribute-version)
+- [医学数据集注册与使用](#医学数据集注册与使用)
+  - [kvasir-SEG数据集介绍](#kvasir-seg数据集介绍)
+  - [Detectron2数据集注册](#detectron2数据集注册)
+  - [与mask2former模型输入相匹配](#与mask2former模型输入相匹配)
 # Mask2former环境配置与运行
 Github地址：[Mask2Former](https://github.com/facebookresearch/Mask2Former)
 ## 安装环境
