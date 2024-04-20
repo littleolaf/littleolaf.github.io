@@ -49,6 +49,7 @@ Latex workshop
 可参考如下的链接：  
 [latex vscode-CSDN](https://blog.csdn.net/weixin_45477628/article/details/130511209)  
 [VSCode+LaTeX](https://blog.csdn.net/FRIGIDWINTER/article/details/125826505)  
+正向搜索快捷键：`ctrl+alt+j`
 注意：SumatraPDF配置反向编译的地方千万不要使用cli.js的任何信息！！  
 否则反向搜索会直接出现cli.js文件。  
 ```json
