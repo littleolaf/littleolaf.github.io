@@ -8,12 +8,17 @@ category: '实践学习'
 draft: false 
 ---
 步骤：  
-- [1. tex live安装](#1-tex-live安装)
-- [2. vs code 插件](#2-vs-code-插件)
-- [3. 配置相关信息](#3-配置相关信息)
-  - [工作区设置](#工作区设置)
-  - [LaTeX具体配置信息](#latex具体配置信息)
-- [4. Sumatra PDF](#4-sumatra-pdf)
+- [环境配置](#环境配置)
+	- [1. tex live安装](#1-tex-live安装)
+	- [2. vs code 插件](#2-vs-code-插件)
+	- [3. 配置相关信息](#3-配置相关信息)
+		- [工作区设置](#工作区设置)
+		- [LaTeX具体配置信息](#latex具体配置信息)
+	- [4. Sumatra PDF](#4-sumatra-pdf)
+- [Latex 模板下载与使用](#latex-模板下载与使用)
+	- [IEEE论文模板](#ieee论文模板)
+# 环境配置
+要是嫌麻烦可以直接搜索并下载使用tex studio
 ## 1. tex live安装
 官方网址：[TeX Live - TeX Users Group (tug.org)](https://tug.org/texlive/)  
 可以在自定义安装中：1. 修改安装路径。2. 取消安装tex前端。3. 修改需要安装的语言包  
@@ -61,3 +66,7 @@ Latex workshop
 ## 4. Sumatra PDF
 官方网址：[Free PDF Reader - Sumatra PDF](https://www.sumatrapdfreader.org/free-pdf-reader)
 
+# Latex 模板下载与使用
+## IEEE论文模板
+官网下载，具体如何使用待学习。
+[IEEE论文LaTeX模板解析](https://blog.csdn.net/FreshManInC/article/details/135459047)  
