@@ -4,7 +4,7 @@ published: 2024-04-12
 description: "使用mask2former进行医学图像语义分割记录"
 image: "https://raw.githubusercontent.com/littleolaf/Web-picture-repo/master/learn/mask2former_structure.jpg"
 category: 实践学习
-tags: [运行流程, 毕设]
+tags: [运行流程, 毕设, MeGaFormer]
 draft: false
 ---
 这篇文章记录了我在做毕设的途中，学习使用mask2former的全流程与错误记录。
