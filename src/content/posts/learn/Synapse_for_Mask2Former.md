@@ -87,6 +87,8 @@ else:
 ```  
 # Synapse数据集的处理
 ## train训练集处理
-将训练集中的image与label数组拆分存放。
+将训练集中的image与label数组拆分存放。  
+！！！待更新
 ## test测试集处理
-将h5文件拆分为image与label，再将image与label数组按照第一个维度拆分成一个个切片存放。
+将h5文件拆分为image与label，再将image与label数组按照第一个维度拆分成一个个切片存放。  
+！！！待更新
