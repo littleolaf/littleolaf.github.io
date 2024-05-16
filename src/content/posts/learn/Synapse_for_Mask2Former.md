@@ -1,5 +1,5 @@
 ---
-title: Synapse for Mask2Former
+title: Synapse for MeGaFormer
 published: 2024-05-13
 description: '在Detectron2中注册Synapse数据集并使用'
 image: ''
@@ -86,9 +86,14 @@ else:
         return convert_PIL_to_numpy(image, format)
 ```  
 # Synapse数据集的处理
+Synapse的初步处理得到的npz文件与h5文件请参考MISSFormer与TransUnet的数据集处理方式和结果。  
 ## train训练集处理
 将训练集中的image与label数组拆分存放。  
-！！！待更新
+原始Synapse数据集由nii.gz格式文件组成，TransUnet与MISSFormer，SwinUnet等论文使用经过处理的Synapse数据集，将原始数据集按照横断面切成一个个切片（slice）并转换为npz格式文件存储。  
+每一个slice均包含image与label两个数组，分别存储了原始图像信息与对应的ground truth标签值。  
+为了方便后续数据集加载，我们将image数组与label数组分别存放于images与labels文件夹下，进行拆分处理。  
+具体执行文件可以参考`datasets/prepare_Synapse_train.py`文件。  
 ## test测试集处理
-将h5文件拆分为image与label，再将image与label数组按照第一个维度拆分成一个个切片存放。  
-！！！待更新
+前人将测试集的12个扫描文件整合为3D的h5文件，通过加载文件可知每个测试集文件包含image与label两个三维数组，其数组大小为 `(n, 512, 512)`，分别存储了原始图像信息与对应的ground truth标签值。  
+在我们的MeGaFormer中处理二维图像，因此我们将h5文件拆分为image与label两个三维数组的npz文件，再将image与label文件按照数组的第一个维度拆分成`n`个切片，仿照train数据存放至`test/images`与`test/labels`文件夹下。  
+具体执行文件可以参考`datasets/prepare_Synapse_test.py`文件。  
