@@ -31,7 +31,7 @@ export const navBarConfig: NavBarConfig = {
 }
 // 个人信息配置
 export const profileConfig: ProfileConfig = {
-  avatar: 'assets/images/demo-avatar.png', // 头像
+  avatar: 'assets/images/head.jpg', // 头像
   name: 'Tang Wuyang',
   bio: '糖的云上小窝',
   links: [
