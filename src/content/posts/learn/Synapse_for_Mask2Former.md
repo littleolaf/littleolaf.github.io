@@ -32,10 +32,12 @@ if "sem_seg_file_name" in dataset_dict:
     ground_truth = dataset_dict.pop("sem_seg_file_name")
     if ground_truth.endswith('.npz'):
         gt_binary_array = np.load(ground_truth)["arr_0"]
-    else:  
+        sem_seg_gt = gt_binary_array.astype(np.uint8)  # .astype(np.uint8)
+    else:
+        # 以下是为了kvasir进行修改读取mask文件方式转为灰度图读取的部分   
         gt_image = Image.open(ground_truth).convert('L')
         gt_binary_array = np.asarray(gt_image)
-    sem_seg_gt = gt_binary_array.astype("double")
+        sem_seg_gt = np.where(gt_binary_array > 0, 1, 0).astype("double")  #kvasir和DRIVE的二值图
 ```  
 
 ### detectron2/data/dataset_mapper.py/def \_\_call_\_():
@@ -60,14 +62,16 @@ else:
 """修改读取mask文件方式转为灰度图读取"""
 # gt = self.sem_seg_loading_fn(gt_filename, dtype=int)
 
-# 为synapse作npz文件读取修改
+# TODO：为synapse作npz文件读取修改
 if gt_filename.endswith('.npz'):
+    self.synapse = True
     gt_binary_array = np.load(gt_filename)["arr_0"]
+    gt = gt_binary_array.astype(np.uint8)  # .astype(np.uint8)
 else:
     # 以下是为了kvasir进行修改读取mask文件方式转为灰度图读取的部分   
     gt_image = Image.open(gt_filename).convert('L')
     gt_binary_array = np.asarray(gt_image)
-gt = gt_binary_array.astype(np.uint8)
+    gt = np.where(gt_binary_array > 0, 1, 0).astype(np.uint8)  # 专供kvasir和DRIVE二值)
 ```  
 ## 对Image文件读取方式修改：
 ### detectron2/data/detection_utils.py/def read_image():
