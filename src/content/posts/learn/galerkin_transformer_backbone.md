@@ -53,5 +53,27 @@ x = self.simple_attn(x)
 ```  
 有关我实现galerkin attention的代码可以参考另一个篇blog：[Galerkin Transformer](./galerkin_attention.md)
 # 添加配置文件
+Galerkin Transformer的配置文件仿照Swin撰写，位于`configs/Synapse/galerkin_trans/`下。并添加指定PatchEmbed的图像尺寸的参数：  
+```yaml
+MODEL:
+  BACKBONE:
+    NAME: "D2GalerkinTransformer"
+  SWIN:
+    EMBED_DIM: 128
+    DEPTHS: [2, 2, 12, 2] # [2, 2, 18, 2]
+    NUM_HEADS: [64, 64, 128, 128] # [6, 12, 24, 48]
+    WINDOW_SIZE: 12
+    APE: False
+    DROP_PATH_RATE: 0.3
+    PATCH_NORM: True
+    PRETRAIN_IMG_SIZE: 384
+    PATCH_SIZE: 2
+  WEIGHTS: "save_model/swin_base/swin_base_patch4_window12_384_22k.pkl"
+  PIXEL_MEAN: [123.675, 116.280, 103.530]
+  PIXEL_STD: [58.395, 57.120, 57.375]
+```  
+  
 ## 增大特征图输出尺寸的设置
+上述配置文件中，`PATCH_SIZE`被用于指定PatchEmbed的图像分割尺寸为1/2。`NUM_HEADS`为Galerkin Attention的头数。
 ## 显存不够情况的调整
+由于显存不够的情况，将Swin Large的预训练模型更换为Base模型，并且适当降低`DEPTHS`中的blocks数量。  
