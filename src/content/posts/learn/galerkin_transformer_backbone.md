@@ -51,7 +51,7 @@ self.simple_attn = simple_attn(dim, num_heads)
 #forward
 x = self.simple_attn(x)
 ```  
-有关我实现galerkin attention的代码可以参考另一个篇blog：[Galerkin Transformer](./galerkin_attention.md)
+有关我实现galerkin attention的代码可以参考另一个篇blog：[Galerkin Transformer](https://littleolaf.github.io/posts/learn/galerkin_attention/)
 # 添加配置文件
 Galerkin Transformer的配置文件仿照Swin撰写，位于`configs/Synapse/galerkin_trans/`下。并添加指定PatchEmbed的图像尺寸的参数：  
 ```yaml
