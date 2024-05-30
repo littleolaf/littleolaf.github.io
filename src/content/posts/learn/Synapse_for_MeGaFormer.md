@@ -1,5 +1,5 @@
 ---
-title: Synapse for MeGaFormer
+title: Medical Datasets for MeGaFormer
 published: 2024-05-13
 description: '在Detectron2中注册Synapse数据集并使用'
 image: ''
